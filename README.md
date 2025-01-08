@@ -1,41 +1,56 @@
 # Data Analysis on IT-Salaries
 
-This project performs various data analysis tasks on a dataset (`ds_salaries.csv`) related to salaries in the tech industry. The analysis includes exploring the relationships between job titles, salary distributions, locations, and experience levels.
+This project analyzes salary data from a CSV file using various Python libraries, including `pandas`, `matplotlib`, and `seaborn`. It performs exploratory data analysis (EDA) to uncover insights related to salary distribution across different job titles, companies, and locations.
 
-## Libraries Used:
+## Libraries Used
+
 - `numpy`
-- `pandas`
 - `matplotlib`
+- `pandas`
 - `seaborn`
 
-## Data Overview:
-The dataset includes the following columns:
-- `job_title`: The job title of the employee
-- `company_location`: The location of the company
-- `employee_residence`: The residence location of the employee
-- `salary_in_usd`: The salary in USD
-- `work_year`: The year of the work data
-- `remote_ratio`: The percentage of remote work
-- `experience_level`: The level of experience (e.g., Entry, Mid, Senior)
-- `employment_type`: The type of employment (e.g., Full-time, Part-time)
-- `company_size`: The size of the company (e.g., Small, Medium, Large)
+## Dataset
 
-## Analysis Overview:
+The dataset used for this analysis is `ds_salaries.csv`, which contains information about salary data, job titles, company locations, work years, and other attributes. The data is loaded into a Pandas DataFrame for analysis.
 
-The following analysis is performed:
-1. **Top 20 highest salary jobs**: Analysis based on job titles.
-2. **Salary vs Job Title**: Visualization of salary distribution across job titles.
-3. **Salary by Company Location**: Analysis of the highest salaries by company location.
-4. **Salary by Employee Residence**: Analysis of the highest salaries by employee residence.
-5. **Work Year vs Salary**: Salary distribution over the years.
-6. **Experience Level vs Salary**: Comparison of salary based on experience levels.
-7. **Employment Type vs Salary**: Salary distribution based on employment types.
-8. **Company Size vs Salary**: Salary distribution based on company sizes.
+## Key Steps in the Analysis
 
-## Getting Started:
+1. **Data Preprocessing**
+   - Load the dataset and check for missing values.
+   - Examine the data types and shape.
 
-### Prerequisites:
-You will need to install the following Python libraries:
-```bash
-pip install numpy pandas matplotlib seaborn
+2. **Salary Analysis**
+   - Group the data by different categories like job title, company location, and employee residence.
+   - Visualize the highest and lowest salaries within these categories.
+
+3. **Work Year and Job Title Analysis**
+   - Analyze the trends in salary over different years.
+   - Examine the distribution of job titles over the years.
+
+4. **Experience Level and Employment Type**
+   - Group by experience level and employment type to analyze the impact on salary.
+
+5. **Company Location Analysis**
+   - Focus on salaries across different company locations and visualize the results.
+
+6. **Salary Conversion**
+   - Convert salary values based on currency exchange rates.
+
+7. **Plotting and Visualizations**
+   - Multiple bar plots and pie charts are used to visualize the data in a meaningful way.
+
+## Output Visualizations
+
+Several bar plots and pie charts are generated for visual representation of the data:
+- Salary by Job Title
+- Salary by Company Location
+- Salary by Work Year
+- Salary by Experience Level
+- Salary by Employment Type
+
+## Instructions to Run
+Install the Python.
+Install the required dependencies.
+Run the IT salary Analysis.ipynb.
+
 
